@@ -1,0 +1,412 @@
+@import url(../../styles/global.scss);
+
+.cn {
+  padding: 8px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-size: 20px;
+  color: var(--iconColor);
+}
+
+.h4 {
+  color: #595959;
+  font-family: var(--fontf);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 107.692% */
+  letter-spacing: 1.04px;
+}
+
+.ftr {
+  background-image: url(../../assets/images/hospital.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .container {
+    width: 1360px;
+    margin: auto;
+    padding: 50px 0 0 88px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  }
+  .trg {
+    display: flex;
+    width: 100%;
+    padding: 20px 0 30px 0;
+    justify-content: space-around;
+    p {
+      color: #353535;
+      font-family: var(--fontf);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: 0.72px;
+    }
+  }
+}
+
+.forCntct {
+  display: flex;
+  flex-direction: row;
+  .fr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .mg {
+      display: none;
+    }
+    .kp {
+      color: #595959;
+      font-family: var(--fontf);
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 107.692% */
+      letter-spacing: 1.04px;
+    }
+  }
+  .fCnct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    .fp {
+      margin-top: 20px;
+      margin-left: 70px;
+      width: 442px;
+      height: 115px;
+      flex-shrink: 0;
+      color: #585858;
+      font-family: var(--fontf);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: 0.72px;
+    }
+    .ph {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .first {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .lct {
+          width: 180px;
+          color: #5a5a5a;
+          font-family: var(--fontf);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.4px;
+        }
+      }
+      .second {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .nmb {
+          width: 150px;
+          color: #5a5a5a;
+          font-family: var(--fontf);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.4px;
+        }
+      }
+    }
+    .ml {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .sc{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .btn {
+        margin-left: 80px;
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(90deg, #0d4c93 0%, #00c9c9 100%);
+        width: 229px;
+        height: 50px;
+        flex-shrink: 0;
+        padding: 10px 15px;
+        color: #fff;
+        text-align: center;
+        font-family: var(--fontf);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        border: none;
+      }
+      .btn:hover {
+        background: var(--whitebackground);
+      }
+    }
+  }
+}
+
+.lnks {
+  display: flex;
+  justify-content: center;
+  float: right;
+  .about {
+    width: 190px;
+    height: 164px;
+    flex-shrink: 0;
+    p {
+      color: #595959;
+      font-family: var(--fontf);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 28px;
+      letter-spacing: 0.64px;
+      width: 50px;
+    }
+    p:hover {
+      text-decoration: underline;
+      color: var(--whitebackground);
+    }
+  }
+  .mhsl {
+    width: 257px;
+    height: 402px;
+    flex-shrink: 0;
+    p {
+      color: #595959;
+      font-family: var(--fontf);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 28px;
+      letter-spacing: 0.64px;
+      width: 250px;
+    }
+    p:hover {
+      text-decoration: underline;
+      color: var(--whitebackground);
+    }
+  }
+  .srvc {
+    p {
+      color: #595959;
+      font-family: var(--fontf);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 28px;
+      letter-spacing: 0.64px;
+      width: 250px;
+    }
+    p:hover {
+      text-decoration: underline;
+      color: var(--whitebackground);
+    }
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1520px) {
+  .h4 {
+    font-size: 20px;
+  }
+
+  .ftr {
+    .container {
+      width: 100%;
+      padding: 50px 0 0 0;
+      gap: 5px;
+      .lnks {
+        .about {
+          width: 130px;
+        }
+        .mhsl {
+          width: 250px;
+        }
+        .srvc {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1250px) {
+  .ftr {
+    .container {
+      width: 100%;
+      padding: 50px 0 0 0;
+      .lnks {
+        display: none;
+      }
+    }
+    .trg {
+      padding: 80px 0 30px 0;
+    }
+  }
+}
+
+@media (min-width: 670px) and (max-width: 720px) {
+  .ftr {
+    .container {
+      width: 100%;
+      padding: 50px 0 0 0;
+      .lnks {
+        display: none;
+      }
+      .forCntct {
+        .fCnct {
+          gap: 30px;
+          .ph {
+            gap: 8px;
+          }
+          .ml {
+            gap: 8px;
+            .btn {
+              margin-left: 20px;
+            }
+          }
+          .fp {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    .trg {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 80px 0 30px 0;
+    }
+  }
+}
+
+@media (min-width:510px) and (max-width: 670px) {
+  .ftr {
+    .container {
+      width: 95%;
+      margin: auto;
+      padding: 50px 0 0 0;
+      .lnks {
+        display: none;
+      }
+      .forCntct {
+        flex-direction: column;
+        gap: 60px;
+        .fr {
+          gap: 80px;
+          .mg {
+            display: block;
+          }
+          .mg2 {
+            display: none;
+          }
+        }
+        .fCnct {
+          gap: 30px;
+          .ph {
+            gap: 8px;
+          }
+          .ml {
+            gap: 8px;
+            .btn {
+              margin-left: 20px;
+            }
+          }
+          .fp {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    .trg {
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 0 30px 0;
+      p:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 510px) {
+    .ftr {
+      .container {
+        width: 98%;
+        margin: auto;
+        padding: 50px 0 0 0;
+        .lnks {
+          display: none;
+        }
+        .forCntct {
+          flex-direction: column;
+          gap: 60px;
+          .fr {
+            gap: 80px;
+            .mg {
+              display: block;
+              width: 280px;
+            }
+            .mg2 {
+              display: none;
+            }
+          }
+          .fCnct {
+            gap: 30px;
+            .ph {
+              gap: 8px;
+              flex-direction: column;
+              align-items: start;
+            }
+            .ml {
+              gap: 20px;
+              flex-direction: column;
+              align-items: start;
+              .btn {
+                margin-left: 20px;
+              }
+            }
+            .fp {
+              margin-left: 20px;
+            }
+            .fp{
+                width: 300px;
+                margin: 20px 0;
+            }
+          }
+        }
+      }
+      .trg {
+        flex-direction: column;
+        align-items: center;
+        padding: 130px 0 30px 0;
+        p{
+            font-size: 13px;
+        }
+        p:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
