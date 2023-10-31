@@ -26,11 +26,13 @@
     font-size: 20px;
   }
   .swiper-wrapper {
+    height: 700px;
     margin-left: 15px;
     .swiper-slide {
+      height: 100%;
+      padding-top: 100px;
       width: 400px;
       .card {
-        position: relative;
         margin: 0 28px;
         display: flex;
         flex-direction: column;

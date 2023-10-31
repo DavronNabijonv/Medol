@@ -4,56 +4,58 @@
   width: 100%;
   height: 100%;
   .swiper-wrapper {
-    .card {
-      display: flex;
-      flex-direction: column;
-      width: 378px;
-      margin: 0;
-      height: 0px;
-      flex-shrink: 0;
-      border-radius: 50px;
-      background: #fff;
-      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
-      .cardimg {
-        width: 100%;
-        height: auto;
-        margin-top: -100px;
-        object-fit: cover;
-        border-radius: 25px 25px 0 0;
-      }
-      .ttl {
-        color: var(--iconColor);
-        font-family: var(--fontf);
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 1.3px;
+    height: 600px;
+    .swiper-slide {
+      .card {
         display: flex;
-        width: 100%;
-        justify-content: center;
-        padding: 20px 0 0px 0;
-      }
-      .prg {
-        width: 300px;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 0;
-        height: 110px;
+        flex-direction: column;
+        width: 378px;
+        margin: 0;
         flex-shrink: 0;
-        color: #000;
-        text-align: center;
-        font-family: var(--fontf);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 24px; /* 150% */
-      }
-      button {
-        padding: 8px 16px;
-        width: 270px;
-        margin: 0 auto -25px;
-        background: var(--background);
+        border-radius: 50px;
+        background: #fff;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+        .cardimg {
+          width: 100%;
+          height: auto;
+          margin-top: -100px;
+          object-fit: cover;
+          border-radius: 25px 25px 0 0;
+        }
+        .ttl {
+          color: var(--iconColor);
+          font-family: var(--fontf);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 1.3px;
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          padding: 20px 0 0px 0;
+        }
+        .prg {
+          width: 300px;
+          margin: auto;
+          margin-top: 20px;
+          margin-bottom: 0;
+          height: 110px;
+          flex-shrink: 0;
+          color: #000;
+          text-align: center;
+          font-family: var(--fontf);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 24px; /* 150% */
+        }
+        button {
+          padding: 8px 16px;
+          width: 270px;
+          margin: 0 auto -25px;
+          background: var(--background);
+        }
       }
     }
   }
