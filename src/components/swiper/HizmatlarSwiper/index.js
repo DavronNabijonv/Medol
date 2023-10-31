@@ -3,9 +3,9 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import 'swiper/swiper-bundle.css'; // Main Swiper styles
+import 'swiper/css/pagination'; // Additional styles for pagination, if needed
+import 'swiper/css/navigation'; // Additional styles for navigation, if needed
 
 import "./styles.scss";
 
