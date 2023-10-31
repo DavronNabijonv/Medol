@@ -30,158 +30,53 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      .old {
-        display: none;
-        width: 30px;
-        height: 30px;
-        border-radius: var(--borderRadius);
-        background: var(--background);
-        align-items: center;
-        justify-content: center;
-        font-size: 28px;
-      }
-      .old:hover {
-        background: #fff;
-        border: 1px solid #0d4c93;
-      }
-      .kyng {
-        display: none;
-        width: 30px;
-        height: 30px;
-        background: var(--background);
-        border-radius: var(--borderRadius);
-
-        align-items: center;
-        justify-content: center;
-        font-size: 28px;
-      }
-      .kyng:hover {
-        background: #fff;
-        border: 1px solid #0d4c93;
+      text-align: center;
+      width: 1360px;
+      margin: auto;
+    }
+  }
+}
+@media(max-width:1360px){
+  .services{
+    .sitem{
+      .cont{
+        width: 100%;
       }
     }
   }
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  width: 388px;
-  margin: 0 10px;
-  height: 491px;
-  flex-shrink: 0;
-  border-radius: 50px;
-  background: #fff;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
-  .cardimg {
-    object-fit: cover;
-    border-radius: 50px 50px 0 0;
-  }
-  .ttl {
-    color: var(--iconColor);
-    font-family: var(--fontf);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 1.3px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 30px 0 18px 0;
-  }
-  .prg {
-    width: 305px;
-    margin: auto;
-    height: 110px;
-    flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: var(--fontf);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 24px; /* 150% */
-  }
-  button {
-    padding: 8px 16px;
-    width: 270px;
-    margin: 0 auto -25px;
-    background: var(--background);
-  }
-}
 
 @media (min-width: 820px) and (max-width: 1230px) {
   .services {
     .sitem {
       .cont {
-        flex-wrap: wrap;
-        .card {
-          margin-top: 60px;
-        }
+        width: 815px;
+        margin: auto;
       }
     }
   }
 }
 
-@media (min-width: 530px) and (max-width: 820px) {
+@media (min-width:450px) and (max-width: 820px) {
   .services {
     .sitem {
       .cont {
-        .card {
-          display: none;
-        }
-        .old {
-          display: flex;
-          margin-right: 5vw;
-        }
-        .kyng {
-          margin-left: 5vw;
-          display: flex;
-        }
+        width: 410px;
+        margin: auto;
       }
     }
   }
 }
 
-@media  (max-width: 530px) {
+@media  (max-width: 450px) {
   .services {
+    padding: 20px 0;
     .sitem {
+      padding: 50px 0;
       .cont {
-        .card {
-          display: none;
-          width: 310px;
-          height: 450px;
-          button {
-            width: 200px;
-          }
-          animation: nm 2.5s forwards;
-        }
-        @keyframes nm {
-            from{
-                opacity: 0;
-            }to{
-                opacity: 1;
-            }
-        }
-        .old {
-          border-radius: 15px;
-          width: 50px;
-          height: 50px;
-          display: flex;
-          position: absolute;
-          margin-right: 70px;
-          margin-bottom: -600px;
-        }
-        .kyng {
-          border-radius: 15px;
-          width: 50px;
-          height: 50px;
-          position: absolute;
-          margin-left: 70px;
-          margin-bottom: -600px;
-          display: flex;
-        }
+        width: 285px;
+        margin: auto;
       }
     }
   }

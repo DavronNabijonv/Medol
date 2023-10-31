@@ -241,6 +241,9 @@
 
   @media (max-width: 420px) {
     .kmp {
+      .kttl{
+        font-size: 30px;
+      }
       .body {
         justify-content: center;
         align-items: center;
@@ -255,13 +258,13 @@
           margin: auto;
           text-align: center;
           p{
-            width: 100%;
-            margin: auto;
+            width: 90%;
+            font-size: 15px;
           }
           button {
             width: 270px;
             margin-left: 0;
-            margin-top: 400px;
+            margin-top: 200px;
           }
         }
       }

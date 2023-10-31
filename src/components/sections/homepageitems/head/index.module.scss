@@ -2,12 +2,11 @@
 
 .head {
   width: 100%;
-  padding: 250px 0;
+  padding: 150px 0;
   background-image: url(../../../../assets/images/hospital.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   .container {
     width: 1300px;
     margin: auto;
@@ -15,208 +14,27 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    animation: slide 2s forwards;
-    // text qismi uchun
-    .text {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      button {
-        background: var(--background);
-        width: 270px;
-        padding: 15px;
-      }
-      p:nth-child(1) {
-        min-width: 250px;
-        color: var(--iconColor);
-        font-family: var(--fontf);
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 8px;
-      }
-      p:nth-child(2) {
-        width: 680px;
-        color: #363535;
-        font-family: var(--fontf);
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 43px; /* 166.667% */
-      }
-    }
-    .fimg {
-      width: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .back {
-        width: 479.732px;
-        height: 479.732px;
-        flex-shrink: 0;
-        border-radius: 479.732px;
-        border: 60px solid rgba(0, 201, 201, 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .rasm {
-          width: 560px;
-          height: 500px;
-          flex-shrink: 0;
-        }
-      }
-    }
-  }
-  .forScroll {
-    padding: 90px 0 50px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    .findex {
-      cursor: pointer;
-      width: 25px;
-      height: 25px;
-      flex-shrink: 0;
-      fill: #fff;
-      stroke-width: 1px;
-      stroke: #00c9c9;
-    }
+    padding: 100px 0;
   }
 }
 
-@keyframes slide {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1360px) {
+@media (min-width: 1110px) and (max-width: 1360px) {
   .head {
     .container {
-      width: 92%;
+      width: 1100px;
       margin: auto;
-      gap: 3rem;
-      justify-content: space-between;
-      .text {
-        width: 50%;
-        justify-content: flex-start;
-        p:nth-child(1) {
-          width: 250px;
-        }
-        p:nth-child(2) {
-          max-width: 550px;
-          height: auto;
-        }
-      }
-      .fimg {
-        justify-content: flex-end;
-        .back {
-          .rasm {
-            max-width: 100%;
-            height: auto;
-          }
-        }
-      }
     }
   }
 }
 
-@media (max-width: 1024px) {
-  .head {
-    .container {
+@media(max-width:1110px){
+  .head{
+    .container{
       width: 100%;
-      .fimg {
-        display: none;
-      }
-      .text {
-        width: 80%;
-        margin: auto;
-        justify-content: flex-start;
-        p:nth-child(1) {
-          width: 250px;
-          font-size: 40px;
-        }
-        p:nth-child(2) {
-          max-width: 580px;
-          text-align: start;
-          font-size: 20px;
-          line-height: 30px;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width:540px) and (max-width: 768px) {
-  .head {
-    .container {
-      padding-left: 5%;
-      .text {
-        width: 100%;
-        justify-content: center;
-        p:nth-child(1) {
-          width: 250px;
-        }
-        p:nth-child(2) {
-          max-width: 510px;
-          text-align: start;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width:410px) and (max-width: 540px) {
-  .head {
-    .container {
-      padding: 0 2%;
-      .text {
-        width: 100%;
-        justify-content: center;
-        p:nth-child(1) {
-          width: 250px;
-          font-size: 20px;
-        }
-        p:nth-child(2) {
-          width: auto;
-          text-align: start;
-        }
-        button{
-            width: 95%;
-            margin: auto;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 410px) {
-  .head {
-    .container {
-      padding: 0 2%;
-      .text {
-        width: 100%;
-        justify-content: center;
-        p:nth-child(1) {
-          font-size: 20px;
-        }
-        p:nth-child(2) {
-          width: auto;
-          text-align: start;
-        }
-        button{
-            width: 95%;
-            margin: auto;
-        }
-      }
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding: 100px 5px;
     }
   }
 }

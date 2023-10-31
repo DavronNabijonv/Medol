@@ -34,14 +34,14 @@ export default function Hamkorlar() {
   }, []);
 
   const prev = () => {
-    f !== 0 && setS(s - s);
-    f !== 0 && setF(f - s);
+    f !== 0 && setS(s - 1);
+    f !== 0 && setF(f - 1);
   };
 
   const next = () => {
     console.log(l, s, f);
-    l !== s && setS(s + s);
-    l !== s && setF(f + s);
+    l !== Hmk.length-1 && setS(s + 1);
+    l !== Hmk.length-1 && setF(f + 1);
     if (l === s || l - 1 === s || l - 2 === s) {
       setTimeout(() => {
         const windowWidth = window.innerWidth;
