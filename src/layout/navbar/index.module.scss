@@ -87,7 +87,10 @@
 
 nav {
   width: 100%;
-  position: absolute;
+  background-image: url(../../assets/images/hospital.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav {
@@ -110,76 +113,77 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  .icon {
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: auto;
+  .icon1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: auto;
-    .icon1 {
+    gap: 0.8rem;
+    button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
       display: flex;
-      flex-direction: row;
       align-items: center;
-      gap: 0.8rem;
-      button {
-        background-color: #fff;
-        border: none;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        padding: 8px;
-        svg {
-          width: 25px;
-          height: 25px;
-          flex-shrink: 0;
-          color: var(--iconColor);
-        }
-      }
-      p {
-        width: 180px;
-        color: #5a5a5a;
-        font-family: var(--fontf);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.4px;
+      justify-content: center;
+      cursor: pointer;
+      padding: 8px;
+      svg {
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        color: var(--iconColor);
       }
     }
-    .icon2 {
+    p {
+      width: 180px;
+      color: #5a5a5a;
+      font-family: var(--fontf);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.4px;
+    }
+  }
+  .icon2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+    button {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
       display: flex;
-      flex-direction: row;
       align-items: center;
-      gap: 0.7rem;
-      button {
-        background-color: #fff;
-        border: none;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        padding: 8px;
-        svg {
-          width: 25px;
-          height: 25px;
-          flex-shrink: 0;
-          color: var(--iconColor);
-        }
+      justify-content: center;
+      cursor: pointer;
+      padding: 8px;
+      svg {
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        color: var(--iconColor);
       }
-      p {
-        width: 180px;
-        color: #5a5a5a;
-        font-family: var(--fontf);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.4px;
-      }
+    }
+    p {
+      width: 180px;
+      color: #5a5a5a;
+      font-family: var(--fontf);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.4px;
     }
   }
 }
@@ -298,6 +302,7 @@ nav {
     background: #fff;
     border-radius: var(--borderRadius);
     gap: 2rem;
+    
     li {
       padding: 8px 20px;
       border-left: 1px solid #f2f2f2;
@@ -337,6 +342,23 @@ nav {
     svg {
       font-size: 22px;
       color: var(--iconColor);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .icon {
+    position: absolute;
+    margin: 0 0 0 40%;
+    .icon1 {
+      p {
+        display: none;
+      }
+    }
+    .icon2 {
+      p {
+        display: none;
+      }
     }
   }
 }
@@ -396,8 +418,8 @@ nav {
       .bckg {
         position: absolute;
         width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.2);
+        height: 1000px;
+        background: rgba(255, 255, 255, 0);
         top: 0;
         right: 0;
         .scr {
@@ -418,8 +440,8 @@ nav {
           }
         }
       }
-      .first{
-        .addition{
+      .first {
+        .addition {
           .nptDisp {
             display: none;
           }
@@ -430,6 +452,7 @@ nav {
       }
       .second {
         width: auto;
+        height: auto;
         ul {
           display: none;
         }
@@ -441,17 +464,17 @@ nav {
           align-items: end;
           list-style-type: none;
           background: #fff;
-          border-radius: 1px;
-          gap: 2rem;
+          border-radius: 25px;
+          box-shadow: 0px 0px 5px #a19f9f;
           gap: 0;
           position: absolute;
           top: 0;
-          right: 0;
+          right: 10px;
           margin-top: 50px;
           width: 300px;
-          height: 100%;
+          height: auto;
           li {
-            padding: 8px 14px;
+            padding: 15px 30px;
             border: none;
           }
         }
@@ -472,28 +495,6 @@ nav {
         justify-content: space-between;
         .addition {
           gap: 10px;
-          .fortblt {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-            .location {
-              background-color: #fff;
-              border: none;
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              cursor: pointer;
-              padding: 8px;
-              svg {
-                width: 25px;
-                height: 25px;
-                flex-shrink: 0;
-                color: var(--iconColor);
-              }
-            }
-          }
         }
       }
     }
@@ -515,61 +516,53 @@ nav {
   nav {
     .nav {
       .first {
-        width: 85%;
-        margin-left: 1.5rem;
-        justify-content: start;
-        .logo{
-          width: auto;
-          height: 100%;
+        width: 100%;
+        margin: 0 0 0 28px;
+        justify-content: space-between;
+        .icon {
+          margin: 0 0 0 37%;
+          gap: 3px;
         }
         .addition {
           gap: 10px;
-          .fortblt {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-            .location {
-              background-color: #fff;
-              border: none;
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              cursor: pointer;
-              padding: 8px;
-              svg {
-                width: 25px;
-                height: 25px;
-                flex-shrink: 0;
-                color: var(--iconColor);
-              }
-            }
-          }
         }
       }
     }
   }
 }
 
+@media (max-width: 508px) {
+  .first {
+    justify-content: space-between;
+    .icon {
+      margin: 0 0 0 45%;
+      .icon1 {
+        display: none;
+      }
+    }
+    .addition{
+      position: absolute;
+      margin: 0 0 0 57%;
+      .search{
+        display: none;
+      }
+    }
+  }
+}
 
-@media(min-width:375px) and (max-width:508px){
-  nav{
-    .nav{
-      .bckg2{
+@media (min-width: 375px) and (max-width: 508px) {
+  nav {
+    .nav {
+      .bckg2 {
         margin: 0 0.5rem 0 0;
       }
       justify-content: flex-start;
-      .first{
+      .first {
         width: 100%;
         margin-left: 0rem;
         justify-content: start;
         gap: 60px;
-        .addition{
-          margin-left: -3rem;
-          gap: 5px;
-        }
-        .logo{
+        .logo {
           scale: 75%;
         }
       }
@@ -577,23 +570,26 @@ nav {
   }
 }
 
-@media(min-width:300px) and (max-width:375px){
-  nav{
-    .nav{
-      .bckg2{
+@media (max-width: 375px) {
+  nav {
+    .nav {
+      .bckg2 {
         margin: 0 0.5rem 0 0;
       }
       justify-content: flex-start;
-      .first{
+      .first {
         width: 100%;
         margin-left: -0.8rem;
         justify-content: start;
-        .addition{
-          margin-left: -4rem;
+        .icon{
+          margin: 0 0 0 50%;
+        }
+        .addition {
+          margin: 0 0 0 67%;
           gap: 5px;
         }
-        .logo{
-          scale: 58%;
+        .logo {
+          scale: 60%;
         }
       }
     }

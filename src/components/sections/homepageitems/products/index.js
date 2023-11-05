@@ -10,7 +10,7 @@ export default function Products() {
     <div className={styles.mhslt}>
       <div className={styles.title}>ПРОДУКЦИЯ</div>
       <div className={styles.prd}>
-        {mahsulot.map((r, index) => (
+        {mahsulot.slice(0,6).map((r, index) => (
           <div className={styles.card} key={index}>
             <img src={r.img} style={r.style} />
             <p>{r.text}</p>

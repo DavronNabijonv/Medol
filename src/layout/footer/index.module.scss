@@ -131,7 +131,7 @@
     }
     .ml {
       display: flex;
-      gap: 20px;
+      gap: 0px;
       align-items: center;
       .sc{
         display: flex;
@@ -224,12 +224,13 @@
   }
 }
 
-@media (min-width: 1250px) and (max-width: 1520px) {
+@media (min-width: 1450px) and (max-width: 1520px) {
   .h4 {
     font-size: 20px;
   }
 
   .ftr {
+    width: 100%;
     .container {
       width: 100%;
       padding: 50px 0 0 0;
@@ -249,7 +250,7 @@
   }
 }
 
-@media (min-width: 720px) and (max-width: 1250px) {
+@media (min-width: 720px) and (max-width: 1450px) {
   .ftr {
     .container {
       width: 100%;

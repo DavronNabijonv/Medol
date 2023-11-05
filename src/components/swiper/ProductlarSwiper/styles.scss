@@ -1,0 +1,49 @@
+@import url(../../../styles/global.scss);
+
+.myswiper {
+  width: 100%;
+  height: 100%;
+  .swiper-button-prev {
+    margin-left: -10px;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #fff;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
+  }
+  .swiper-button-prev::after {
+    font-size: 20px;
+  }
+  .swiper-button-next {
+    margin-right: -10px;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #fff;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
+  }
+  .swiper-button-next::after {
+    font-size: 20px;
+  }
+}
+
+@media(max-width:780px){
+  .myswiper{
+    .swiper-wrapper{
+      height: 430px;
+    }
+  }
+}
+
+@media(max-width:420px){
+  .myswiper{
+    .swiper-button-prev{
+      margin-left:-10px ;
+    }
+    .swiper-button-next{
+      margin-right: 5px;
+    }
+  }
+}

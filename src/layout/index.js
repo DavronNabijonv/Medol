@@ -1,22 +1,25 @@
 import React from "react";
-import Navbar from "./navbar";
 import { routes } from "../pages/routesConfig";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Homepage from "../pages/homepage";
 import Footer from "./footer";
+import Product from "../pages/product";
+import BuildPage from "../pages/buildPage";
+import Services from "../pages/services";
 
 export default function AppLayout() {
   return (
     <>
-      <Navbar />
-      <Router>
+      
         {/* {routes.map(({ id, ...rest }) => {
             <Route key={id} {...rest} />;
           })} */}
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="product" element={<Product />} />
+          <Route path="/buildPage" element={<BuildPage />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
-      </Router>
       <Footer />
     </>
   );

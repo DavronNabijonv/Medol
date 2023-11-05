@@ -1,0 +1,172 @@
+@import url(../../../styles/global.scss);
+
+.mahsulot {
+  .container {
+    width: 1200px;
+    margin: auto;
+    .ttl {
+      width: 100%;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 50px 0 80px 0;
+      p {
+        color: var(--iconColor);
+        font-family: var(--fontf);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    .tplmmahsulot {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px 0 150px 0;
+    }
+  }
+}
+
+@media (min-width:780px) and (max-width:1200px){
+  .mahsulot{
+    .container{
+      width: 770px;
+      margin: auto;
+      gap: 0;
+    }
+  }
+}
+
+@media (min-width:420px) and (max-width:780px){
+  .mahsulot{
+    .container{
+      width: 390px;
+      margin: auto;
+      gap: 0;
+    }
+  }
+}
+
+@media(max-width:420px){
+  .mahsulot{
+    .container{
+      width: 250px;
+      margin: auto;
+      .ttl{
+        padding: 25px 0 40px 0;
+        p{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  opacity: 0.9;
+  background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+  .cardImg {
+    margin-top: 40px;
+  }
+  .text {
+    color: #000;
+    text-align: center;
+    font-family: var(--fontf);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.52px;
+  }
+  a {
+    .btn {
+      border: none;
+      padding: 13px 20px;
+      background: var(--background);
+      border-radius: var(--borderRadius);
+      color: #fff;
+      font-family: var(--fontf);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.card:nth-child(1) {
+  .text {
+    margin: 60px 0 40px 0;
+  }
+}
+.card:nth-child(2) {
+  .text {
+    margin: 24px 0 40px 0;
+  }
+}
+.card:nth-child(3) {
+  .text {
+    margin: -10px 0 15px 0;
+  }
+}
+.card:nth-child(4) {
+  .cardImg {
+    margin-top: 30px;
+  }
+  .text {
+    margin: 10px 0 30px 0;
+  }
+}
+.card:nth-child(5) {
+  .text {
+    margin: 133px 0 28px 0;
+  }
+}
+.card:nth-child(6) {
+  .text {
+    margin: 53px 0 28px 0;
+  }
+}
+.card:nth-child(7) {
+  .text {
+    margin: 60px 0 40px 0;
+  }
+}
+.card:nth-child(8) {
+  .text {
+    margin: 24px 0 40px 0;
+  }
+}
+.card:nth-child(9) {
+  .text {
+    margin: -10px 0 15px 0;
+  }
+}
+.card:nth-child(10) {
+  .cardImg {
+    margin-top: 30px;
+  }
+  .text {
+    margin: 10px 0 30px 0;
+  }
+}
+.card:nth-child(11) {
+  .text {
+    margin: 133px 0 28px 0;
+  }
+}
+.card:nth-child(12) {
+  .text {
+    margin: 53px 0 28px 0;
+  }
+}
