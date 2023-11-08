@@ -6,6 +6,7 @@ import Footer from "./footer";
 import Product from "../pages/product";
 import BuildPage from "../pages/buildPage";
 import Services from "../pages/services";
+import Aksiya from "../pages/aksiya";
 
 export default function AppLayout() {
   return (
@@ -19,6 +20,7 @@ export default function AppLayout() {
           <Route path="product" element={<Product />} />
           <Route path="/buildPage" element={<BuildPage />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/aksiya" element={<Aksiya />} />
         </Routes>
       <Footer />
     </>

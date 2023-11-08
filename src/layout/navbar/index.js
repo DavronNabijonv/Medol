@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./index.module.scss";
-import {Link, NavLink} from 'react-router-dom'
+import { Link, NavLink } from "react-router-dom";
 import { MdLocationPin } from "react-icons/md";
 import { BiSolidPhoneCall, BiSearchAlt } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
@@ -49,7 +49,7 @@ export default function Navbar() {
     <nav>
       <div className={styles.nav}>
         <div className={styles.first}>
-          <CalLoc/>
+          <CalLoc />
           <img src={logo1} className={styles.logo} />
           {/* translate, search facebook */}
           <div className={styles.addition}>
@@ -115,10 +115,18 @@ export default function Navbar() {
         <div className={styles.second}>
           <ul className={open && styles.menu}>
             <li> МАГАЗИН</li>
-            <li className={styles.active}><NavLink to={"/"}>О КОМПАНИИ</NavLink> </li>
-            <li><NavLink to='/product'>ПРОДУКЦИЯ </NavLink></li>
-            <li><NavLink to={'/services'}>УСЛУГИ</NavLink> </li>
-            <li>АКЦИИ И НОВОСТИ </li>
+            <li className={styles.active}>
+              <NavLink to={"/"}>О КОМПАНИИ</NavLink>{" "}
+            </li>
+            <li>
+              <NavLink to="/product">ПРОДУКЦИЯ </NavLink>
+            </li>
+            <li>
+              <NavLink to="/services">УСЛУГИ</NavLink>{" "}
+            </li>
+            <li>
+              <NavLink to="/aksiya">АКЦИИ И НОВОСТИ </NavLink>
+            </li>
             <li>ОБРАТНАЯ СВЯЗЬ</li>
           </ul>
         </div>
@@ -128,26 +136,25 @@ export default function Navbar() {
   );
 }
 
-
 // bu logoni chap tarafidagi qism
 function CalLoc() {
   return (
-      <div className={styles.icon}>
-        <div className={styles.icon1}>
-          <button className={styles.location}>
-            <MdLocationPin />
-          </button>
-          <p>г.Ташкент, Чиланзар 10 квартал, дом 3/1</p>
-        </div>
-        <div className={styles.icon2}>
-          <button className={styles.location}>
-            <BiSolidPhoneCall />
-          </button>
-          <p>
-            <p>+998 71 276-62-53</p>
-            <p>+998 71 276-62-54</p>
-          </p>
-        </div>
+    <div className={styles.icon}>
+      <div className={styles.icon1}>
+        <button className={styles.location}>
+          <MdLocationPin />
+        </button>
+        <p>г.Ташкент, Чиланзар 10 квартал, дом 3/1</p>
       </div>
+      <div className={styles.icon2}>
+        <button className={styles.location}>
+          <BiSolidPhoneCall />
+        </button>
+        <p>
+          <p>+998 71 276-62-53</p>
+          <p>+998 71 276-62-54</p>
+        </p>
+      </div>
+    </div>
   );
 }

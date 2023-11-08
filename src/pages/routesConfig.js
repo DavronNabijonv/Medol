@@ -1,3 +1,4 @@
+import Aksiya from "./aksiya"
 import BuildPage from "./buildPage"
 import Homepage from "./homepage"
 import Product from "./product"
@@ -23,5 +24,10 @@ export const routes = [
         id:4,
         path:'/services',
         element:<Services/>
+    },
+    {
+        id:5,
+        path:'/aksiya',
+        element:<Aksiya/>
     }
 ]

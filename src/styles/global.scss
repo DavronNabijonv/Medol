@@ -10,7 +10,6 @@
     --Montserrat: 'Montserrat'
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -18,5 +17,13 @@
 }
 
 .active{
+    color: #00C9C9;
+}
+
+a{
+    text-decoration: none;
+    color: #0D4C93;
+}
+a:hover{
     color: #00C9C9;
 }
