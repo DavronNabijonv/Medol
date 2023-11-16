@@ -24,6 +24,21 @@
   letter-spacing: 1.04px;
 }
 
+/* Use :global to apply styles to the entire modal, not just locally scoped */
+:global(.mdl) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Add an overlay class for styling the background */
+:global(.overlay) {
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
 .ftr {
   background-image: url(../../assets/images/hospital.png);
   background-repeat: no-repeat;
@@ -356,7 +371,7 @@
       .container {
         width: 98%;
         margin: auto;
-        padding: 50px 0 0 0;
+        padding: 30px;
         .lnks {
           display: none;
         }
@@ -367,7 +382,7 @@
             gap: 80px;
             .mg {
               display: block;
-              width: 280px;
+              width: 250px;
             }
             .mg2 {
               display: none;
@@ -392,7 +407,7 @@
               margin-left: 20px;
             }
             .fp{
-                width: 300px;
+                width: 260px;
                 margin: 20px 0;
             }
           }
@@ -404,6 +419,7 @@
         padding: 130px 0 30px 0;
         p{
             font-size: 13px;
+            width: 250px;
         }
         p:nth-child(2) {
           display: none;

@@ -37,7 +37,7 @@
   background: #fff;
   border-radius: 50px;
   width: 399px;
-  animation: inp 2s forwards;
+  animation: inp 2s backwards;
   .selected {
     background-color: var(--iconColor);
     border: none;
@@ -73,6 +73,72 @@
   }
   to {
     width: 399px;
+  }
+}
+
+@keyframes inp2 {
+  from {
+    width: 35px;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+.nptDisp2 {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nptDisp2 {
+    display: flex;
+    .dropdown {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: #fff;
+      border-radius: var(--borderRadius);
+      padding: 8px;
+      gap: 5px;
+      svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        color: var(--iconColor);
+      }
+    }
+    .dropdownitems {
+      position: absolute;
+      margin: 15px 0;
+      background: #fff;
+      border-radius: var(--borderRadius);
+      padding: 15px 0;
+      box-shadow: 0px 0px 3px 0.8px #a19f9f;
+      div {
+        display: flex;
+        flex-direction: row;
+        gap: 0.8rem;
+        padding: 8px;
+        P {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .searchOpen {
+    animation: none;
+    width: auto;
+    .npt {
+      position: absolute;
+      animation: inp2 2.8s forwards;
+      overflow: hidden;
+      margin-top: 130px;
+      left: 10px;
+      right: 10px;
+    }
+    .npt:focus {
+      width: 100%;
+    }
   }
 }
 
@@ -302,7 +368,7 @@ nav {
     background: #fff;
     border-radius: var(--borderRadius);
     gap: 2rem;
-    
+
     li {
       padding: 8px 20px;
       border-left: 1px solid #f2f2f2;
@@ -541,10 +607,10 @@ nav {
         display: none;
       }
     }
-    .addition{
+    .addition {
       position: absolute;
       margin: 0 0 0 57%;
-      .search{
+      .search {
         display: none;
       }
     }
@@ -582,7 +648,7 @@ nav {
         width: 100%;
         margin-left: -0.8rem;
         justify-content: start;
-        .icon{
+        .icon {
           margin: 0 0 0 50%;
         }
         .addition {

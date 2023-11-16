@@ -17,7 +17,7 @@ export default function AppLayout() {
           })} */}
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="product" element={<Product />} />
+          <Route path="/product" element={<Product />} />
           <Route path="/buildPage" element={<BuildPage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/aksiya" element={<Aksiya />} />

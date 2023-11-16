@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;700&display=swap");
 
-:root{
-    --background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
-    --whitebackground: #00C9C9;
-    --iconColor:#0D4C93;
-    --fontf: 'Roboto';
-    --borderRadius:25px;
-    --Montserrat: 'Montserrat'
+:root {
+  --background: linear-gradient(90deg, #0d4c93 0%, #00c9c9 100%);
+  --whitebackground: #00c9c9;
+  --iconColor: #0d4c93;
+  --fontf: "Roboto";
+  --borderRadius: 25px;
+  --Montserrat: "Montserrat";
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.active{
-    color: #00C9C9;
+.active {
+  color: #00c9c9;
 }
 
-a{
-    text-decoration: none;
-    color: #0D4C93;
+a {
+  text-decoration: none;
+  color: #0d4c93;
 }
-a:hover{
-    color: #00C9C9;
+a:hover {
+  color: #00c9c9;
 }

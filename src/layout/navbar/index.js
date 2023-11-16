@@ -76,7 +76,7 @@ export default function Navbar() {
             </div>
 
             {/* pastki qism dropdown button bo`ladi */}
-            <div className={izl ? styles.nptDisp : styles.translater}>
+            <div className={izl ? styles.nptDisp2 : styles.translater}>
               <div onClick={handleDropDown} className={styles.dropdown}>
                 <img src={forImg} className={styles.flag} />
                 {innerWidth > 1024 && <p className={styles.drp}>{lang}</p>}
@@ -85,7 +85,7 @@ export default function Navbar() {
               {/* dropdown items */}
               <div className={drop ? styles.dropdownitems : styles.disp}>
                 <div onClick={() => handleLangeChange("Русский", rus)}>
-                  <img src={rus} className={styles.flag} />{" "}
+                  <img src={rus} className={styles.flag} />
                   <p className={styles.drp}>Русский</p>
                 </div>
                 <div onClick={() => handleLangeChange("English", eng)}>

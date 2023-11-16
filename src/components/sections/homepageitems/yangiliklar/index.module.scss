@@ -37,18 +37,27 @@
         text-decoration: none;
         gap: 1rem;
         color: #00c9c9;
+        transition: all 0.3s ease;
         p {
           font-family: var(--fontF);
           font-size: 24px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          transition: all 0.3s ease;
+        }
+        .sv{
+          transition: all 0.3s ease;
+          fill: #00c9c9;
         }
       }
     }
     .ft:hover {
       p {
         color: #0d4c93;
+      }
+      .sv{
+        fill: #0d4c93;
       }
     }
   }
